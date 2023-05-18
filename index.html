@@ -2,89 +2,35 @@
 <html>
 <head>
     <style>
-        .flashing {
-            animation: flashing 2s infinite;
-            color: blue;
-            font-size: 100px; /* increased size by 50% */
-            text-align: center; /* center alignment */
-            width: 100%; /* make sure the h1 element takes up the full width so the text is centered */
-        }
-
-        @keyframes flashing {
-            0%   {opacity: 1;}
-            50%  {opacity: 0;}
-            100% {opacity: 1;}
-        }
-    </style>
-</head>
-<body>
-
-<h1 class="flashing">Aqualyze</h1>
-
-<!-- Place your other HTML content here -->
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Aqualyze - Premium Water Filters</title>
-    <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+            background-color: white;
+            overflow: hidden; /* Hide scrollbars */
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+
+        .marquee {
+            position: absolute;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 100px;
+            color: red;
         }
-        h1, h2 {
-            color: #333;
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%; /* Show the marquee just outside the screen */
+            animation: marquee 10s linear infinite;
         }
-        p {
-            line-height: 1.6;
-        }
-        .price {
-            font-size: 24px;
-            color: #009900;
+
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to The Aqualyze 510</h1>
-        <p>Introducing the Aqualyze 510, your solution for high capacity reduction of Scale, Chlorine, Color, Heavy Metals, Bad Taste, Odor, Cysts, Bacteria, Viruses, Fungicides, Pesticides and Organics. Now with built-in Scale Prevention with FILTERSORB® SP3.</p>
-
-        <h2>Why Choose Aqualyze ?</h2>
-        <p>The Aqualyze 510 is a complete water filter system designed for easy installation, providing the best clarity water for drinking, coffee machines and tea. Employing advanced filtration technologies such as carbon block, anti-limescale beads, and ultra-filtration membrane, the Filter provides high-quality water with high Oxygen and natural mineral content. Say goodbye to bottled water, and hello to Aqualyze 510.</p>
-
-        <h2>Key Features</h2>
-        <ul>
-            <li>Easy to assemble and quick change cartridge</li>
-            <li>Auto water shut off</li>
-            <li>Removes visible limescale</li>
-            <li>Up to 25,000 liters capacity</li>
-            <li>Prevents scale</li>
-            <li>No Phosphate</li>
-            <li>No Sodium</li>
-            <li>No by-pass, 100% filtration</li>
-            <li>pH Stable</li>
-            <li>Removes substances that affect taste or odour</li>
-            <li>Retains health-boosting minerals such as calcium and magnesium (unlike processes based on reverse osmosis/ion exchangers)</li>
-        </ul>
-
-        <h2>Price and Purchase</h2>
-        <p class="price">€ 250 plus IVA</p>
-        <p>Price includes supply and installation. Contact us today to purchase your Aqualyze 510 Filter and experience the difference in your water quality.</p>
+    <div class="marquee">
+        <span>Stephanie Thompson I Love You</span>
     </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-  
-
-
